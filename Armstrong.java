@@ -14,16 +14,16 @@ public class Armstrong {
 			temp/=10;
 			count++;
 			}
-		temp=num;
-		while(temp!=0) {
-			int r=temp%10;
-			//arm+=Math.pow(r,count);
-			int pow=1;
-			for(int i=0;i<count;i++) {
-				pow*=r;
-			}
-			arm+=pow;
-			temp/=10;	
+		//temp=num;
+		while(num!=0) {
+			int r=num%10;
+			arm+=Math.pow(r,count);
+//			int pow=1;
+//			for(int i=0;i<count;i++) {
+//				pow*=r;
+//			}
+//			arm+=pow;
+			num/=10;	
 			}
         System.out.println(arm);
         if(arm==original) {
