@@ -26,33 +26,37 @@ public class Sum_RowCol {
 			}
 			System.out.println();
 		}
-		int r_sum=0,c_sum=0;
-		//for row
-		for(int i=0;i<1;i++) {
-			for(int j=0;j<arr.length;j++) {
-				System.out.println("Elements in row "+i+" and column "+j+" is "+arr[i][j]);
-				r_sum+=arr[i][j];
-			}
-		}
-		System.out.println(r_sum);
+		int r_sum,c_sum=0;
+//		//for row
+//		for(int i=0;i<1;i++) {
+//			for(int j=0;j<arr.length;j++) {
+//				System.out.println("Elements in row "+i+" and column "+j+" is "+arr[i][j]);
+//				r_sum+=arr[i][j];
+//			}
+//		}
+//		System.out.println(r_sum);
 		
 		//for each rows sums
-				for(int i=0;i<1;i++) {
-					for(int j=0;j<arr.length;j++) {
+				for(int i=0;i<r;i++) {
+					r_sum=0;
+					for(int j=0;j<c;j++) {
 						System.out.println("Elements in row "+i+" and column "+j+" is "+arr[i][j]);
 						r_sum+=arr[i][j];
 					}
+					System.out.println(r_sum);
 				}
-				System.out.println(r_sum);
+				//System.out.println(r_sum);
 		
 		//for column
-		for(int i=0;i<1;i++) {
-			for(int j=0;j<arr.length;j++) {
+		for(int i=0;i<c;i++) {
+			c_sum=0;
+			for(int j=0;j<r;j++) {
 				System.out.println("Elements in row "+j+" and column "+i+" is "+arr[j][i]);
 				c_sum+=arr[j][i];
 			}
+			System.out.println(c_sum);
 		}
-		System.out.println(c_sum);
+		
        sc.close();
 	}
 

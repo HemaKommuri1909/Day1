@@ -1,6 +1,4 @@
 package com.codegnan.arrays;
-
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Add_Mul {
