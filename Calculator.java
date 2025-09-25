@@ -1,16 +1,15 @@
-package com.codegnan.basic;
-import java.util.Scanner;
-public class Calculator {
-	public static void main(String[] args) {
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter a num : ");
-		int num=sc.nextInt();
-		for(int i=0;i<=10;i++) {
-		String table=num+"x"+i+"="+num*i;
-		System.out.println(table);
-		}
-		System.out.println();
+package com.codegnan.oop.overloading;
 
-	}
+public class Calculator {
+	int num1;
+	int num2;
+public Calculator(int num1,int num2) {
+	this.num1=num1;
+	this.num2=num2;
+}
+public int Addition() {
+	int sum=num1+num2;
+	return sum;
+}
 
 }
